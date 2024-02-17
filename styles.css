@@ -1,0 +1,51 @@
+html, body { 
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0, 0%, 94%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+  
+div {  
+    align-items: center;
+    justify-content: center;
+   border-style: dotted;
+    position: relative; /* Relative positioning for parent divs */
+}
+
+.shadowdiv {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 35em;
+    width: 60em;
+    background-color: hsl(0, 0%, 94%);
+    box-shadow: 
+            5px 5px 10px hsl(0, 0%, 86%), /* top left */
+            -5px 5px 10px hsl(0, 0%, 86%), /* top right */
+            0px 0px 0px hsl(0, 0%, 86%), /* bottom left */
+            0px 0px 0px; /* bottom right */
+    
+padding: 4em 11em;
+}
+
+.tooldiv {
+    margin-left: 15em;
+    background-color: hsl(0, 0%, 100%);
+    width: 50em;
+    height: 30em;
+    border-radius: 4% 4% 30%;
+    position: absolute; /* Absolute positioning for child div */
+    border-style: solid;
+    border-color: hsl(0, 0%, 93%);
+    
+}
+
+.birthdateHeader{
+    width: 100%;
+    height: 25%;
+    border-radius: 0% 0% 0% 0%;
+}
+
